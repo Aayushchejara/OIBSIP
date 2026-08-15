@@ -19,3 +19,17 @@ To scan a local web server (DVWA) to find security holes automatically using the
 **3. No HTTPS Enforcement**
 *   **What it is / Danger:** The site operates on standard HTTP, meaning all data (including logins) is transmitted in clear text, making it highly vulnerable to network sniffing.
 *   **How to Fix:** Install an SSL/TLS certificate and configure the server to force redirects from HTTP to HTTPS.
+
+## 📌 Overview
+This repository contains the documentation, command logs, and analysis for **Task 7** of the Oasis Infobyte Cyber Security Internship. The objective of this task is to perform an automated web vulnerability scan using **Nikto**, analyze the security posture of a target web application, and document the findings along with remediation steps.
+
+* **Target Environment:** Local Test Server running DVWA (Damn Vulnerable Web Application) at `http://192.168.29.130/dvwa/`
+* **Tool Used:** Nikto v2.6.0 on Kali Linux
+
+---
+
+## 🛠️ 1. Installation Steps
+To install Nikto on a Debian/Ubuntu/Kali Linux system, execute the following commands in the terminal:
+```bash
+sudo apt update
+sudo apt install nikto
